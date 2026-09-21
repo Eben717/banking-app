@@ -2,15 +2,15 @@ import React, { useRef, useEffect } from 'react';
 import { View, Text, StyleSheet, SafeAreaView, Image, TouchableOpacity, Animated, ScrollView, TouchableWithoutFeedback } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { colors } from '../theme/colors';
-import { Feather } from '@expo/vector-icons';
+import { Ionicons } from '@expo/vector-icons';
 
 const PAYMENT_OPTIONS = [
-  { id: '1', title: 'Send Money', description: 'To friends or bank accounts', icon: 'send', color: colors.primary },
-  { id: '2', title: 'Request Money', description: 'Ask friends for funds', icon: 'download-cloud', color: colors.primaryDark },
-  { id: '3', title: 'Pay Bills', description: 'Utilities, internet, TV', icon: 'file-text', color: colors.brandText },
-  { id: '4', title: 'Mobile Top-up', description: 'Airtime and Data bundles', icon: 'smartphone', color: colors.primary },
-  { id: '5', title: 'International Transfer', description: 'Send money abroad', icon: 'globe', color: colors.primaryDark },
-  { id: '6', title: 'Scan to Pay', description: 'Pay via QR Code', icon: 'maximize', color: colors.brandText },
+  { id: '1', title: 'Send Money', description: 'To friends or bank accounts', icon: 'paper-plane-outline', color: colors.primary },
+  { id: '2', title: 'Request Money', description: 'Ask friends for funds', icon: 'arrow-down-circle-outline', color: colors.primaryDark },
+  { id: '3', title: 'Pay Bills', description: 'Utilities, internet, TV', icon: 'receipt-outline', color: colors.brandText },
+  { id: '4', title: 'Mobile Top-up', description: 'Airtime and Data bundles', icon: 'phone-portrait-outline', color: colors.primary },
+  { id: '5', title: 'International Transfer', description: 'Send money abroad', icon: 'globe-outline', color: colors.primaryDark },
+  { id: '6', title: 'Scan to Pay', description: 'Pay via QR Code', icon: 'qr-code-outline', color: colors.brandText },
 ];
 
 export default function PaymentsScreen() {
@@ -79,7 +79,7 @@ function PaymentCard({ option, delay }: { option: any, delay: number }) {
         }]}
       >
         <View style={[styles.iconContainer, { backgroundColor: option.color + '15' }]}>
-          <Feather name={option.icon as any} size={24} color={option.color} />
+          <Ionicons name={option.icon as any} size={24} color={option.color} />
         </View>
         <Text style={styles.cardTitle}>{option.title}</Text>
         <Text style={styles.cardDescription}>{option.description}</Text>
