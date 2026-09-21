@@ -5,12 +5,12 @@ import { colors } from '../theme/colors';
 import { Feather } from '@expo/vector-icons';
 
 const PAYMENT_OPTIONS = [
-  { id: '1', title: 'Send Money', description: 'To friends or bank accounts', icon: 'send', color: '#3B82F6' },
-  { id: '2', title: 'Request Money', description: 'Ask friends for funds', icon: 'download-cloud', color: '#10B981' },
-  { id: '3', title: 'Pay Bills', description: 'Utilities, internet, TV', icon: 'file-text', color: '#F59E0B' },
-  { id: '4', title: 'Mobile Top-up', description: 'Airtime and Data bundles', icon: 'smartphone', color: '#8B5CF6' },
-  { id: '5', title: 'Global Transfer', description: 'Send money abroad', icon: 'globe', color: '#EC4899' },
-  { id: '6', title: 'Scan to Pay', description: 'Pay via QR Code', icon: 'maximize', color: '#14B8A6' },
+  { id: '1', title: 'Send Money', description: 'To friends or bank accounts', icon: 'send', color: colors.primary },
+  { id: '2', title: 'Request Money', description: 'Ask friends for funds', icon: 'download-cloud', color: colors.primaryDark },
+  { id: '3', title: 'Pay Bills', description: 'Utilities, internet, TV', icon: 'file-text', color: colors.brandText },
+  { id: '4', title: 'Mobile Top-up', description: 'Airtime and Data bundles', icon: 'smartphone', color: colors.primary },
+  { id: '5', title: 'International Transfer', description: 'Send money abroad', icon: 'globe', color: colors.primaryDark },
+  { id: '6', title: 'Scan to Pay', description: 'Pay via QR Code', icon: 'maximize', color: colors.brandText },
 ];
 
 export default function PaymentsScreen() {
